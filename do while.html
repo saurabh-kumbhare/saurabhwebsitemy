@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+        .parent{
+            width: 100vw;
+            height: 100vh;
+            background-color: aqua;
+            display: flex;
+            flex-direction: row;
+        }
+        .parent-child-left{
+            width: 90%;
+            height: 100%;
+            background-color: chartreuse;
+            margin-right: 5px;
+
+        }
+        .parent-child-left-top{
+            width: 100%;
+            height:60%;
+            background-color: darksalmon;
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+
+        }
+        .parent-child-left-top-left{
+            height: 100%;
+            width: 60%;
+            background-color: darkred;
+            margin-right: 5px;
+
+        }
+        .parent-child-left-top-right{
+
+            height: 100%;
+            width: 40%;
+            background-color: rgb(39, 2, 20);
+            padding: 10px;
+        }
+        .parent-child-left-top-right-top{
+            width: 100%;
+            height: 60%;
+            background-color: darkgray;
+            margin-bottom: 5px;
+
+        }
+        
+        .parent-child-left-top-right-bottom{
+
+            width: 100%;
+            height: 40%;
+            background-color: darkorange;
+        }
+        
+
+        
+        
+        
+
+        .parent-child-left-bottom{
+            width: 100%;
+            height: 40%;
+            background-color: rgb(227, 168, 19);
+            padding: 10px;
+
+        }
+        .parent-child-left-bottom-top{
+            width: 100%;
+            height: 50%;
+            background-color: cornsilk;
+            margin: 5px;
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+
+
+        }
+        .parent-child-left-bottom-top-left{
+            height: 100%;
+            width: 30%;
+            background-color: burlywood;
+            margin-left: 5px;
+
+        }
+        .parent-child-left-bottom-top-right{
+            height: 100%;
+            width: 70%;
+            background-color: chartreuse;
+
+        }
+        .parent-child-left-bottom-bottom{
+            width: 100%;
+            height: 50%;
+            background-color: dimgray;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+        .parent-child-left-bottom-bottom-child{
+            height: 100%;
+            width: 32%;
+            background-color: gold;
+
+        }
+        
+
+        
+    
+
+        
+
+        
+
+        .parent-child-right{
+            width: 10%;
+            height: 100%;
+            background-color: crimson;
+
+        }
+        
+
+        
+            
+            
+
+        
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="parent-child-left">
+            <div class="parent-child-left-top">
+                <div class="parent-child-left-top-left"></div>
+                <div class="parent-child-left-top-right">
+                    <div class="parent-child-left-top-right-top"></div>
+                    <div class="parent-child-left-top-right-bottom"></div>
+                </div>
+            </div>
+            <div class="parent-child-left-bottom">
+        
+                <div class="parent-child-left-bottom-top">
+                    <div class="parent-child-left-bottom-top-left"></div>
+                    <div class="parent-child-left-bottom-top-right"></div>
+                </div>
+                <div class="parent-child-left-bottom-bottom">
+                    <div class="parent-child-left-bottom-bottom-child"></div>
+                    <div class="parent-child-left-bottom-bottom-child"></div>
+                    <div class="parent-child-left-bottom-bottom-child"></div>
+                </div>
+            </div>
+        </div>
+        <div class="parent-child-right"></div>
+    </div>
+     
+</body>
+</html>
